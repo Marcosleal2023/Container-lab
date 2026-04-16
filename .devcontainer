@@ -1,8 +1,11 @@
 {
-    "image": "ghcr.io/srl-labs/containerlab/devcontainer-dind-slim:latest",
-    "hostRequirements": {
-        "cpus": 2, 
-        "memory": "8gb",
-        "storage": "16gb"
-    }
+  "name": "containerlab-codespace",
+  "image": "ghcr.io/srl-labs/containerlab/devcontainer-dind-slim:latest",
+  "hostRequirements": {
+    "cpus": 2,
+    "memory": "8gb",
+    "storage": "16gb"
+  },
+  "runArgs": ["--privileged"],
+  "postCreateCommand": "containerlab version"
 }
