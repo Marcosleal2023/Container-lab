@@ -6,6 +6,5 @@
     "memory": "8gb",
     "storage": "16gb"
   },
-  "runArgs": ["--privileged"],
-    "postCreateCommand": "apt update && apt install -y curl && curl -sL https://get.containerlab.dev | bash"
+  "runArgs": ["--privileged"]
 }
