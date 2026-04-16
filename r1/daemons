@@ -1,3 +1,4 @@
 zebra=yes
 bgpd=yes
 ospf6d=yes
+isis=yes
