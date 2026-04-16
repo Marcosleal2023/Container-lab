@@ -1,10 +1,9 @@
 {
   "name": "containerlab-codespace",
-  "image": "ghcr.io/srl-labs/containerlab/devcontainer-dind-slim:latest",
-  "hostRequirements": {
-    "cpus": 2,
-    "memory": "8gb",
-    "storage": "16gb"
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
   },
-  "runArgs": ["--privileged"]
+  "runArgs": ["--privileged"],
+  "postCreateCommand": "curl -sL https://get.containerlab.dev | bash"
 }
