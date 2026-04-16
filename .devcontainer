@@ -7,5 +7,5 @@
     "storage": "16gb"
   },
   "runArgs": ["--privileged"],
-  "postCreateCommand": "containerlab version"
+    "postCreateCommand": "apt update && apt install -y curl && curl -sL https://get.containerlab.dev | bash"
 }
