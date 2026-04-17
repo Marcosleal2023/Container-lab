@@ -6,7 +6,7 @@
       "prefix": "clab",
       "mgmt": {
         "network": "clab",
-        "bridge": "br-d7687e966150",
+        "bridge": "br-ff38b9adda12",
         "ipv4-subnet": "172.20.20.0/24",
         "ipv4-gw": "172.20.20.1",
         "ipv6-subnet": "3fff:172:20:20::/64",
@@ -25,18 +25,18 @@
       "group": "",
       "labdir": "/workspaces/Container-lab/clab-srv6-lab/r1",
       "kind": "linux",
-      "image": "frrouting/frr:latest",
+      "image": "quay.io/frrouting/frr:10.5.1",
       "mgmt-net": "",
       "mgmt-intf": "",
-      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-address": "172.20.20.3",
       "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "3fff:172:20:20::2",
+      "mgmt-ipv6-address": "3fff:172:20:20::3",
       "mgmt-ipv6-prefix-length": 64,
       "mac-address": "",
       "labels": {
         "clab-git-branch": "main",
-        "clab-git-hash": "1d1f668",
-        "clab-mgmt-net-bridge": "br-d7687e966150",
+        "clab-git-hash": "04342b5",
+        "clab-mgmt-net-bridge": "br-ff38b9adda12",
         "clab-node-group": "",
         "clab-node-kind": "linux",
         "clab-node-lab-dir": "/workspaces/Container-lab/clab-srv6-lab/r1",
@@ -58,7 +58,7 @@
       "group": "",
       "labdir": "/workspaces/Container-lab/clab-srv6-lab/r2",
       "kind": "linux",
-      "image": "frrouting/frr:latest",
+      "image": "quay.io/frrouting/frr:10.5.1",
       "mgmt-net": "",
       "mgmt-intf": "",
       "mgmt-ipv4-address": "172.20.20.4",
@@ -68,8 +68,8 @@
       "mac-address": "",
       "labels": {
         "clab-git-branch": "main",
-        "clab-git-hash": "1d1f668",
-        "clab-mgmt-net-bridge": "br-d7687e966150",
+        "clab-git-hash": "04342b5",
+        "clab-mgmt-net-bridge": "br-ff38b9adda12",
         "clab-node-group": "",
         "clab-node-kind": "linux",
         "clab-node-lab-dir": "/workspaces/Container-lab/clab-srv6-lab/r2",
@@ -91,18 +91,18 @@
       "group": "",
       "labdir": "/workspaces/Container-lab/clab-srv6-lab/r3",
       "kind": "linux",
-      "image": "frrouting/frr:latest",
+      "image": "quay.io/frrouting/frr:10.5.1",
       "mgmt-net": "",
       "mgmt-intf": "",
-      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-address": "172.20.20.2",
       "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "3fff:172:20:20::3",
+      "mgmt-ipv6-address": "3fff:172:20:20::2",
       "mgmt-ipv6-prefix-length": 64,
       "mac-address": "",
       "labels": {
         "clab-git-branch": "main",
-        "clab-git-hash": "1d1f668",
-        "clab-mgmt-net-bridge": "br-d7687e966150",
+        "clab-git-hash": "04342b5",
+        "clab-mgmt-net-bridge": "br-ff38b9adda12",
         "clab-node-group": "",
         "clab-node-kind": "linux",
         "clab-node-lab-dir": "/workspaces/Container-lab/clab-srv6-lab/r3",
@@ -123,13 +123,13 @@
         "a": {
           "node": "r1",
           "interface": "eth1",
-          "mac": "aa:c1:ab:d4:b5:49",
+          "mac": "aa:c1:ab:22:ac:9e",
           "peer": "z"
         },
         "z": {
           "node": "r2",
           "interface": "eth1",
-          "mac": "aa:c1:ab:04:4d:05",
+          "mac": "aa:c1:ab:72:21:97",
           "peer": "a"
         }
       }
@@ -139,13 +139,13 @@
         "a": {
           "node": "r2",
           "interface": "eth2",
-          "mac": "aa:c1:ab:0f:91:1e",
+          "mac": "aa:c1:ab:0f:ad:6b",
           "peer": "z"
         },
         "z": {
           "node": "r3",
           "interface": "eth1",
-          "mac": "aa:c1:ab:c7:55:95",
+          "mac": "aa:c1:ab:e2:c0:29",
           "peer": "a"
         }
       }
@@ -155,13 +155,13 @@
         "a": {
           "node": "r1",
           "interface": "eth2",
-          "mac": "aa:c1:ab:98:29:ca",
+          "mac": "aa:c1:ab:f2:ac:55",
           "peer": "z"
         },
         "z": {
           "node": "r3",
           "interface": "eth2",
-          "mac": "aa:c1:ab:07:58:5a",
+          "mac": "aa:c1:ab:4c:3c:fa",
           "peer": "a"
         }
       }
